@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}PDTIC System{% endblock %}</title>
+    
+    <!-- Gov.br CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fontawesome.com">
+    <!-- Design System de Governo -->
+    <link rel="stylesheet" href="https://www.gov.br/ds/">
+    <!-- Fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css"/>
+    <!-- CSS -->
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            font-family: 'Arial', sans-serif; 
+        }
+        main {
+            flex: 1;
+        }
+        footer {
+            background-color: whitesmoke; 
+            padding: 1rem 0;
+            text-align: center;
+            color: #0f397c; 
+            box-shadow: 11px 4px 6px rgba(0, 0, 0, 0.1);
+        }       
+        .navbar {
+            background-color: whitesmoke;
+        }
+        .navbar-nav .nav-link {
+            margin-left: 10px; 
+        }
+        .navbar-nav .nav-link:hover {
+            color: #0f397c;
+            transform: scale(1.05); 
+            transition: transform 0.2s; 
+        }
+        .header-logos {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem;
+            background-color: #ffffff; 
+            box-shadow: 11px 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .header-logos img {
+            max-width: 150px; 
+        }
+        .header-buttons {
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            transform: scale(1.05);
+            color: #0f397c;
+        }
+        .vertical-line {
+            width: 1px;
+            background-color: rgba(0, 0, 0, 0.1);
+            height: 25px;
+            margin-left: 20px;
+        }
+        .py-3 {
+            color: #0f397c;
+        }
+        .nav-link .a {
+            color: #0f397c;
+        }
+        .text-decoration-none {
+            color: #0f397c;
+        }
+        .fas {
+            color: #0f397c;
+        }
+        .nav-link {
+            color: #0f397c;
+        }
+        .btn-light {
+        --interactive-rgb: #fff;
+        background-color: #fff;
+        color: #0f397c;
+        border: 1px solid #0f397c;
+        border-radius: 100em;
+        --button-size: 40px;
+        --button-radius: 100em;
+        --button-xsmall: 24px;
+        --button-small: 32px;
+        --button-medium: 40px;
+        --button-large: 48px;
+        }
+        .btn-dark {
+        --interactive-rgb: #0f397c;
+        background-color: #0f397c;
+        color: #fff;
+        border: 1px solid #0f397c;
+        border-radius: 100em;
+        --button-size: 40px;
+        --button-radius: 100em;
+        --button-xsmall: 24px;
+        --button-small: 32px;
+        --button-medium: 40px;
+        --button-large: 48px;
+        }       
+    </style>
+
+</head>
+<body>
+    
+    <header class="br-header compact">
+            <div class="header-logos">
+                <img src='https://www.funasa.gov.br/documents/20182/24223/logoFunasa2025.png/9abb65a1-4587-4fef-8b0f-2a4f52226846?t=1737411857015' alt="logoFunasa2025">
+                    <div class="vertical-line"></div>
+                        <div class="header-buttons">
+                            <ul class="navbar-nav d-flex"> 
+                                {% if user.is_authenticated %}
+                                <li class="nav-item">
+                                    <a class="btn btn-light mb-1" href="{% url 'logout' %}">Sair</a>
+                                </li>
+                                {% else %}
+                                <li class="nav-item">
+                                    <a class="btn btn-light mb-1" type = "submit" href="{% url 'login' %}">Entrar</a>
+                                </li>
+                                {% endif %}
+                            </ul>
+                        </div>
+            </div>     
+        <h2 class="text-center text-muted py-3">Bem-vindo ao Sistema PDTIC</h2>
+    </header>
+
+    <main class="container my-4">
+        {% block content %}
+        {% endblock %}
+    </main>
+
+    <footer> 
+    <p>&copy; 2025 PDSYSTEM</p>
+    </footer>  
+
+</body>
+</html> 

@@ -1,0 +1,76 @@
+{% extends "base_generic.html" %}
+
+{% block title %}Página Inicial{% endblock %}
+
+{% block content %}
+<div class="container mt-5">
+    
+    <!-- Formulário de pesquisa -->
+    <form method="GET" action="{% url 'home' %}" class="mb-4">
+        <div class="input-group">
+            <input 
+                type="text" 
+                name="q" 
+                class="form-control" 
+                placeholder="O que você procura?" 
+                value="{{ query }}" 
+            >
+            <div class="input-group-append">
+                <button class="btn btn-link" type="submit">
+                    <i class="fas fa-search"></i>
+                </button>
+            </div>
+            <div class="input-group-append">
+                <button class="btn btn-link" type="button" onclick="clearInput()">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+        </div>
+    </form>
+    <script>
+        function clearInput() {
+            document.getElementsByName('q')[0].value = '';
+        }
+    </script>
+
+    <!-- Exibe o último PDTIC cadastrado -->
+    <div class="card mb-4">
+        <div class="card-header bg-light text-muted">
+            <h2 class="card-title">Último registro</h2>
+        </div>
+        <div class="card-body">
+            {% if ultimo_pdsystem %}
+                <p><strong>Título:</strong> {{ ultimo_pdsystem.titulo }}</p>
+                <p><strong>Vigência:</strong> {{ ultimo_pdsystem.vigencia_inicio }} a {{ ultimo_pdsystem.vigencia_fim }}</p>
+                <a href="{% url 'detalhes_pdsystem' ultimo_pdsystem.id %}" class="btn btn-light mb-1">Ver Detalhes</a>
+            {% else %}
+                <p class="text-muted">Nenhum PDTIC cadastrado.</p>
+            {% endif %}
+        </div>
+    </div>
+
+    <!-- Exibe a lista de todos os PDTICs cadastrados -->
+    <div class="card mb-4">
+        <div class="card-header bg-light text-muted">
+            <h2 class="card-title">Lista de PDTICs</h2>
+        </div>
+        <div class="card-body">
+            <ul class="list-group">
+                {% for pdsystem in pdsystems %}
+                    <li class="list-group-item">
+                        <a href="{% url 'detalhes_pdsystem' pdsystem.id %}" class="text-decoration-none">{{ pdsystem.titulo }}</a>
+                        <span class="text-muted">(Vigência: {{ pdsystem.vigencia_inicio }} a {{ pdsystem.vigencia_fim }})</span>
+                    </li>
+                {% empty %}
+                    <li class="list-group-item text-muted">Nenhum PDTIC cadastrado.</li>
+                {% endfor %}
+            </ul>
+        </div>
+    </div>
+
+    <!-- Link para criar um novo PDTIC -->
+    <div class="text-center">
+        <a href="{% url 'novo_pdsystem' %}" class="btn btn-dark mb-3">Cadastrar Novo PDTIC</a>
+    </div>
+</div>
+{% endblock %}

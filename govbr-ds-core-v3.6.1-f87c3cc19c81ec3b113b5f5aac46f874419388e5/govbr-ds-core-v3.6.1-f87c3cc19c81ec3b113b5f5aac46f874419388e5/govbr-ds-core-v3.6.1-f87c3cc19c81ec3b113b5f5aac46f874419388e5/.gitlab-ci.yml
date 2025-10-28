@@ -1,0 +1,134 @@
+image: node:20.11-alpine
+
+cache:
+  paths:
+    - node_modules/
+    - public
+
+stages:
+  - Dependências
+  - Qualidade
+  - Build
+  - Pages
+  - Release
+
+Instalar dependências:
+  stage: Dependências
+  artifacts:
+    paths:
+      - node_modules
+    expire_in: 1 hour
+  script:
+    - apk --no-cache add git
+    - npm install
+  rules:
+    - when: always
+
+CSS:
+  stage: Qualidade
+  artifacts:
+    when: always
+    paths:
+      - report-stylelint.txt
+    expire_in: 1 week
+  script:
+    - npx stylelint src/**/*.scss  --formatter verbose --output-file report-stylelint.txt
+
+Markdown:
+  stage: Qualidade
+  artifacts:
+    when: always
+    paths:
+      - report-markdownlint.txt
+    expire_in: 1 week
+    expose_as: "Markdownlint Report"
+  before_script:
+    - npm i -g markdownlint-cli
+  script:
+    - markdownlint '**/*.md' -o report-markdownlint.txt
+  rules:
+    - when: always
+
+Commits:
+  stage: Qualidade
+  artifacts:
+    when: always
+    paths:
+      - report-commitlint.txt
+    expire_in: 1 week
+    expose_as: "Commitlint Report"
+  script:
+    - npx commitlint-gitlab-ci -x @govbr-ds/commitlint-config > report-commitlint.txt
+  rules:
+    - when: always
+
+DS:
+  stage: Build
+  artifacts:
+    paths:
+      - dist
+    expire_in: 1 week
+  script:
+    - npm install
+    - npm run build
+  only:
+    - main
+    - next
+    - merge_requests
+    - /\d.(\d|x).(\d|x)(-alpha)?$/
+    - /alpha$/
+
+pagesmain:
+  stage: Pages
+  artifacts:
+    paths:
+      - public
+    expire_in: 1 week
+    expose_as: "Build"
+  script:
+    - rm -rf public
+    - npm install
+    - npm run build
+    - mv dist public
+  only:
+    - main
+
+pages:
+  stage: Pages
+  script:
+    - mkdir -p tmp
+    - echo "$CI_COMMIT_REF_NAME"
+    - echo "$CI_COMMIT_REF_NAME" > tmp/index.html
+    - mkdir -p public
+    - mkdir -p public/$CI_COMMIT_REF_NAME/
+    - npm install
+    - npm run build
+    - cp dist/* public/$CI_COMMIT_REF_NAME/ -R
+    - ls public/$CI_COMMIT_REF_NAME/
+  artifacts:
+    name: "$CI_COMMIT_REF_NAME"
+    paths:
+      - public
+    expire_in: 5 days
+  only:
+    - merge_requests
+
+Semantic Release:
+  stage: Release
+  when: manual
+  environment:
+    name: production
+  artifacts:
+    paths:
+      - dist
+    expire_in: 1 week
+  before_script:
+    - apk --no-cache add git zip
+  script:
+    - npm install --save-dev conventional-changelog-conventionalcommits@7.0.2    
+    - npx semantic-release
+  only:
+    - main
+    - next
+    - /\d.(\d|x).(\d|x)(-alpha)?$/
+    - /alpha$/

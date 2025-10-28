@@ -1,0 +1,13 @@
+{% extends "base_generic.html" %}
+
+{% block content %}
+<div class="container mt-4">
+    <h2>Adicionar Nova Ação</h2>
+    <form method="post">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit" class="btn btn-dark mb-1">Salvar</button>
+        <a href="{% url 'detalhes_pdsystem' meta.pdsystem.id %}" class="btn btn-light mb-1">Cancelar</a>
+    </form>
+</div>
+{% endblock %}

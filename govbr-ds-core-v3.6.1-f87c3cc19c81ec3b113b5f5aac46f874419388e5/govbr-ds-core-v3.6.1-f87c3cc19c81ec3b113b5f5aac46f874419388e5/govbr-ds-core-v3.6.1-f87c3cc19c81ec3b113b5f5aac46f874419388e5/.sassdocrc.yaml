@@ -1,0 +1,7 @@
+dest: ./sassdoc
+groups:
+  '01': Configurações globais
+  '02': Uso genérico
+  '03': Utilitários
+  '04': Uso específico
+  '05': Obsoleto

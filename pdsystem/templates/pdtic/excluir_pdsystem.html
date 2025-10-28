@@ -1,0 +1,11 @@
+{% extends "base_generic.html" %}
+
+{% block content %}
+<h2>Excluir PDTIC</h2>
+<p>Você tem certeza que deseja excluir "{{ pdsystem.titulo }}"?</p>
+<form method="post">
+    {% csrf_token %}
+    <button type="submit" class="btn btn-dark mb-1">Confirmar</button>
+</form>
+<a href="{% url 'detalhes_pdsystem' pdsystem.id %}" class="btn btn-light mb-1">Cancelar</a>
+{% endblock %}

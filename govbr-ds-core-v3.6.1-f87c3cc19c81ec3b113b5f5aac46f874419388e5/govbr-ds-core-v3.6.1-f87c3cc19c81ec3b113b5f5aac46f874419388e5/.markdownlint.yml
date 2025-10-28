@@ -1,0 +1,2 @@
+extends: "@govbr-ds/markdownlint-config"
+MD041: false

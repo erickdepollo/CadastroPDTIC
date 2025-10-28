@@ -1,0 +1,1 @@
+*Lists* são estruturas compostas por itens em sequência vertical ou horizontal que podem conter imagens, ícones e elementos interativos. Utilize *lists* quando precisar organizar conteúdos semelhantes em forma sequencial.

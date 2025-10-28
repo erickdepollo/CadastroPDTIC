@@ -1,0 +1,1972 @@
+{
+  "children": [
+    {
+      "ext": ["html"],
+      "hideLabel": true,
+      "id": "home",
+      "label": "Página Inicial",
+      "type": "documentation"
+    },
+    {
+      "children": [
+        {
+          "id": "sobre",
+          "label": "Sobre o Design System",
+          "type": "documentation"
+        },
+        {
+          "id": "principios",
+          "label": "Princípios do Design System",
+          "type": "documentation"
+        },
+        {
+          "ext": ["html"],
+          "hideLabel": true,
+          "id": "padrao-minimo",
+          "label": "Padrão Mínimo",
+          "type": "documentation"
+        },
+        {
+          "ext": ["html"],
+          "hideLabel": true,
+          "id": "o-que-ha-de-novo",
+          "label": "O que há de novo",
+          "type": "documentation"
+        },
+        {
+          "ext": ["html"],
+          "hideLabel": true,
+          "id": "comunidade",
+          "label": "Comunidade do Design System",
+          "type": "documentation"
+        }
+      ],
+      "id": "introducao",
+      "label": "Introdução",
+      "type": "category"
+    },
+    {
+      "children": [
+        {
+          "id": "instalacao",
+          "label": "Guia de Instalação",
+          "type": "documentation"
+        },
+        {
+          "id": "prototipando",
+          "label": "Prototipando com o Design System",
+          "type": "documentation"
+        },
+        {
+          "id": "utilizando-sass",
+          "label": "Utilizando o Sass",
+          "type": "documentation"
+        },
+        {
+          "id": "purgecss",
+          "label": "Reduzir arquivo de CSS",
+          "type": "documentation"
+        },
+        {
+          "id": "versao-lite",
+          "label": "Versão Lite",
+          "type": "documentation"
+        },
+        {
+          "id": "vendors",
+          "label": "Uso de Vendors",
+          "type": "documentation"
+        }
+      ],
+      "id": "como-comecar",
+      "label": "Como começar",
+      "type": "category"
+    },
+    {
+      "ext": ["md"],
+      "hideLabel": true,
+      "id": "acessibilidade",
+      "label": "Acessibilidade",
+      "type": "documentation"
+    },
+    {
+      "content": "Baixe os Modelos de tela e os Artefatos de Design e Desenvolvimento para seu projeto!",
+      "id": "assets",
+      "image": "assets/imgs/download-page.png",
+      "label": "Downloads",
+      "sections": [
+        {
+          "files": [
+            {
+              "label": "UIKit Web",
+              "image": "assets/imgs/xdfigma.png",
+              "description": "Kit com componentes disponíveis para construção de interfaces.",
+              "children": [
+                {
+                  "label": "Adobe XD",
+                  "size": "15.07 MB",
+                  "version": "5.2.0",
+                  "id": "uikit-web-xd-5.2.0",
+                  "path": "https://gitlab.com/govbr-ds/design/govbr-ds-design-uikits/-/raw/v3.4.0/web/uikit-govbrds.xd"
+                },
+                {
+                  "label": "Figma",
+                  "size": "1.15 MB",
+                  "version": "2.3.0",
+                  "id": "uikit-web-figma-2.3.0",
+                  "path": "https://gitlab.com/govbr-ds/design/govbr-ds-design-uikits/-/raw/v3.4.0/web/uikit-govbrds.fig"
+                }
+              ]
+            },
+            {
+              "label": "UIKit Wireframe",
+              "image": "assets/imgs/wireframe.png",
+              "description": "Kit com componentes disponíveis para construção de wireframes.",
+              "children": [
+                {
+                  "label": "Adobe XD",
+                  "size": "15.17 MB",
+                  "version": "2.0.0",
+                  "id": "uikit-wireframe-xd-2.0.0",
+                  "path": "https://gitlab.com/govbr-ds/design/govbr-ds-design-uikits/-/raw/v3.4.0/wireframe/uikit-govbrds-wireframe.xd"
+                },
+                {
+                  "label": "Figma",
+                  "size": "376.20 KB",
+                  "version": "2.0.0",
+                  "id": "uikit-wireframe-figma-2.0.0",
+                  "path": "https://gitlab.com/govbr-ds/design/govbr-ds-design-uikits/-/raw/v3.4.0/wireframe/uikit-govbrds-wireframe.fig"
+                }
+              ]
+            },
+            {
+              "label": "UIKit Android",
+              "image": "assets/imgs/logo-android.png",
+              "description": "Kit com componentes do Material Design no tema do GOVBR-DS.",
+              "children": [
+                {
+                  "label": "Adobe XD",
+                  "size": "1.33 MB",
+                  "version": "4.3.0",
+                  "id": "uikit-android-xd-4.3.0",
+                  "path": "https://gitlab.com/govbr-ds/design/govbr-ds-design-uikits/-/raw/v3.4.0/material/uikit-govbrds-material.xd"
+                },
+                {
+                  "label": "Figma",
+                  "size": "468.66 KB",
+                  "version": "4.3.0",
+                  "id": "uikit-android-figma-4.3.0",
+                  "path": "https://gitlab.com/govbr-ds/design/govbr-ds-design-uikits/-/raw/v3.4.0/material/uikit-govbrds-material.fig"
+                }
+              ]
+            },
+            {
+              "label": "UIKIT iOS",
+              "image": "assets/imgs/logo-ios.png",
+              "description": "Kit com componentes do iOS no tema do GOVBR-DS.",
+              "children": [
+                {
+                  "label": "Adobe XD",
+                  "size": "1.07 MB",
+                  "version": "3.4.0",
+                  "id": "uikit-ios-xd-3.4.0",
+                  "path": "https://gitlab.com/govbr-ds/design/govbr-ds-design-uikits/-/raw/v3.4.0/ios/uikit-govbrds-ios.xd"
+                },
+                {
+                  "label": "Figma",
+                  "size": "469.36 KB",
+                  "version": "3.4.0",
+                  "id": "uikit-ios-figma-3.4.0",
+                  "path": "https://gitlab.com/govbr-ds/design/govbr-ds-design-uikits/-/raw/v3.4.0/ios/uikit-govbrds-ios.fig"
+                }
+              ]
+            },
+            {
+              "label": "Ilustrações",
+              "image": "assets/imgs/pacote.png",
+              "description": "Diversos exemplos de ilustrações e pincéis para enriquecer seu layout.",
+              "children": [
+                {
+                  "label": "Modelos",
+                  "size": "174.8 MB",
+                  "version": "1.0.0",
+                  "id": "ilustracoes-modelos-1.0.0",
+                  "path": "https://serprodrive.serpro.gov.br/s/kqcLeMZ5tQiNxrR"
+                },
+                {
+                  "label": "Assets",
+                  "size": "2.8 MB",
+                  "version": "1.0.0",
+                  "id": "ilustracoes-assets-1.0.0",
+                  "path": "https://serprodrive.serpro.gov.br/s/fqpQbTmtmpPM6r4"
+                }
+              ]
+            }
+          ],
+          "id": "designer",
+          "label": "Designer",
+          "description": "Baixe versões anteriores dos Artefatos de Design do Design System GOV.BR.",
+          "history": []
+        },
+        {
+          "files": [
+            {
+              "label": "Consistência Visual",
+              "image": "assets/imgs/xdfigma.png",
+              "description": "Exemplos de consistência visual entre aplicações desktop, web e mobile.",
+              "children": [
+                {
+                  "label": "Adobe XD",
+                  "size": "13.69 MB",
+                  "version": "1.0.1",
+                  "id": "prototipo-xd-1.0.0",
+                  "path": "https://gitlab.com/govbr-ds/design/govbr-ds-design-padroes-modelos/-/raw/v3.4.0/consistenciavisual/consistenciavisual.xd"
+                },
+                {
+                  "label": "Figma",
+                  "size": "8.61 MB",
+                  "version": "1.0.1",
+                  "id": "prototipo-figma-1.0.0",
+                  "path": "https://gitlab.com/govbr-ds/design/govbr-ds-design-padroes-modelos/-/raw/v3.4.0/consistenciavisual/consistenciavisual.fig"
+                }
+              ]
+            },
+            {
+              "label": "CRUD",
+              "image": "assets/imgs/xdfigma.png",
+              "description": "Telas utilizando as operações básicas em um conjunto de dados.",
+              "children": [
+                {
+                  "label": "Adobe XD",
+                  "size": "12.45 MB",
+                  "version": "1.0.0",
+                  "id": "crud-xd-1.0.0",
+                  "path": "https://gitlab.com/govbr-ds/design/govbr-ds-design-padroes-modelos/-/raw/v3.4.0/crud/crud.xd"
+                },
+                {
+                  "label": "Figma",
+                  "size": "1.72 MB",
+                  "version": "1.0.0",
+                  "id": "crud-figma-1.0.0",
+                  "path": "https://gitlab.com/govbr-ds/design/govbr-ds-design-padroes-modelos/-/raw/v3.4.0/crud/crud.fig"
+                }
+              ]
+            },
+            {
+              "label": "Relatórios",
+              "image": "assets/imgs/xdfigma.png",
+              "description": "Exemplos de relatórios para impressão para uso no GOVBR-DS.",
+              "children": [
+                {
+                  "label": "Adobe XD",
+                  "size": "14.44 MB",
+                  "version": "1.0.0",
+                  "id": "relatorios-xd-1.0.0",
+                  "path": "https://gitlab.com/govbr-ds/design/govbr-ds-design-padroes-modelos/-/raw/v3.4.0/relatorios/relatorios.xd"
+                },
+                {
+                  "label": "Figma",
+                  "size": "958.90 KB",
+                  "version": "1.0.0",
+                  "id": "relatorios-figma-1.0.0",
+                  "path": "https://gitlab.com/govbr-ds/design/govbr-ds-design-padroes-modelos/-/raw/v3.4.0/relatorios/relatorios.fig"
+                }
+              ]
+            },
+            {
+              "label": "Dashboard",
+              "image": "assets/imgs/xdfigma.png",
+              "description": "Painéis para visualização de indicadores, alertas, listagens, gráficos entre outros.",
+              "children": [
+                {
+                  "label": "Adobe XD",
+                  "size": "7.73 MB",
+                  "version": "1.0.0",
+                  "id": "dashboard-xd-1.0.0",
+                  "path": "https://gitlab.com/govbr-ds/design/govbr-ds-design-padroes-modelos/-/raw/v3.4.0/dashboard/dashboard.xd"
+                },
+                {
+                  "label": "Figma",
+                  "size": "1.56 MB",
+                  "version": "1.0.0",
+                  "id": "dashboard-figma-1.0.0",
+                  "path": "https://gitlab.com/govbr-ds/design/govbr-ds-design-padroes-modelos/-/raw/v3.4.0/dashboard/dashboard.fig"
+                }
+              ]
+            },
+            {
+              "label": "Sessão do Usuário",
+              "image": "assets/imgs/xdfigma.png",
+              "description": "Telas com funções de autenticação: logar, tempo de sessão, perfil do usuário entre outros.",
+              "children": [
+                {
+                  "label": "Adobe XD",
+                  "size": "7.87 MB",
+                  "version": "1.0.0",
+                  "id": "sessao-xd-1.0.0",
+                  "path": "https://gitlab.com/govbr-ds/design/govbr-ds-design-padroes-modelos/-/raw/v3.4.0/sessao/sessao.xd"
+                },
+                {
+                  "label": "Figma",
+                  "size": "1.58 MB",
+                  "version": "1.0.0",
+                  "id": "sessao-figma-1.0.0",
+                  "path": "https://gitlab.com/govbr-ds/design/govbr-ds-design-padroes-modelos/-/raw/v3.4.0/sessao/sessao.fig"
+                }
+              ]
+            },
+            {
+              "label": "Guia de Recolhimento",
+              "image": "assets/imgs/xdfigma.png",
+              "description": "Telas de pagamento utilizando códigos de barra, QRCode, PIX entre outros.",
+              "children": [
+                {
+                  "label": "Adobe XD",
+                  "size": "2.99 MB",
+                  "version": "1.0.0",
+                  "id": "guiarecolhimento-xd-1.0.0",
+                  "path": "https://gitlab.com/govbr-ds/design/govbr-ds-design-padroes-modelos/-/raw/v3.4.0/guiarecolhimento/guiarecolhimento.xd"
+                },
+                {
+                  "label": "Figma",
+                  "size": "1.49 MB",
+                  "version": "1.0.0",
+                  "id": "guiarecolhimento-figma-1.0.0",
+                  "path": "https://gitlab.com/govbr-ds/design/govbr-ds-design-padroes-modelos/-/raw/v3.4.0/guiarecolhimento/guiarecolhimento.fig"
+                }
+              ]
+            },
+            {
+              "label": "Tela Base",
+              "image": "assets/imgs/xdfigma.png",
+              "description": "Estrutura básica com referência de grids para diferentes resoluções de tela.",
+              "children": [
+                {
+                  "label": "Adobe XD",
+                  "size": "3.42 MB",
+                  "version": "1.0.0",
+                  "id": "base-xd-1.0.0",
+                  "path": "https://gitlab.com/govbr-ds/design/govbr-ds-design-padroes-modelos/-/raw/v3.4.0/base/base.xd"
+                },
+                {
+                  "label": "Figma",
+                  "size": "350.05 KB",
+                  "version": "1.0.0",
+                  "id": "base-figma-1.0.0",
+                  "path": "https://gitlab.com/govbr-ds/design/govbr-ds-design-padroes-modelos/-/raw/v3.4.0/base/base.fig"
+                }
+              ]
+            },
+            {
+              "label": "Erro",
+              "image": "assets/imgs/xdfigma.png",
+              "description": "Exemplos de telas com a aplicação do padrão Erro.",
+              "children": [
+                {
+                  "label": "Adobe XD",
+                  "size": "37.81 MB",
+                  "version": "1.0.0",
+                  "id": "erro-xd-1.0.0",
+                  "path": "https://gitlab.com/govbr-ds/design/govbr-ds-design-padroes-modelos/-/raw/v3.4.0/erro/erro.xd"
+                },
+                {
+                  "label": "Figma",
+                  "size": "33.21 MB",
+                  "version": "1.0.0",
+                  "id": "erro-figma-1.0.0",
+                  "path": "https://gitlab.com/govbr-ds/design/govbr-ds-design-padroes-modelos/-/raw/v3.4.0/erro/erro.fig"
+                }
+              ]
+            }
+          ],
+          "id": "modelos",
+          "label": "Modelos",
+          "description": "Baixe versões anteriores dos Modelos de template do Design System GOV.BR.",
+          "history": [
+            {
+              "id": "crud",
+              "label": "CRUD",
+              "versions": [
+                {
+                  "path": "https://serprodrive.serpro.gov.br/s/EXs3aNt9dxAQrTi",
+                  "version": "4.0.2",
+                  "data": "16 nov 2021",
+                  "govbr-ds_version": "2.4.1"
+                },
+                {
+                  "path": "https://serprodrive.serpro.gov.br/s/t8c74CydKnE8KoJ",
+                  "version": "4.0.1",
+                  "data": "06 out 2021",
+                  "govbr-ds_version": "2.3.0"
+                },
+                {
+                  "path": "https://serprodrive.serpro.gov.br/s/TGnwA2SjtfzNoHz",
+                  "version": "4.0.0",
+                  "data": "06 set 2021",
+                  "govbr-ds_version": "2.2.0"
+                }
+              ]
+            },
+            {
+              "id": "relatorios",
+              "label": "Relatórios",
+              "versions": [
+                {
+                  "path": "https://serprodrive.serpro.gov.br/s/KELSj965NGL5Fed",
+                  "version": "1.0.1",
+                  "data": "16 nov 2021",
+                  "govbr-ds_version": "2.4.1"
+                },
+                {
+                  "path": "https://serprodrive.serpro.gov.br/s/K8Fiiqzkr3nMeEa",
+                  "version": "1.0.0",
+                  "data": "06 set 2021",
+                  "govbr-ds_version": "2.2.0"
+                }
+              ]
+            },
+            {
+              "id": "dashboard",
+              "label": "Dashboard",
+              "versions": [
+                {
+                  "path": "https://serprodrive.serpro.gov.br/s/zw2Y8XcGXysAgX3",
+                  "version": "1.0.1",
+                  "data": "16 nov 2021",
+                  "govbr-ds_version": "2.4.1"
+                },
+                {
+                  "path": "https://serprodrive.serpro.gov.br/s/L664xX235PLFE88",
+                  "version": "1.0.0",
+                  "data": "06 set 2021",
+                  "govbr-ds_version": "2.2.0"
+                }
+              ]
+            },
+            {
+              "id": "sessao",
+              "label": "Sessão de usuário",
+              "versions": [
+                {
+                  "path": "https://serprodrive.serpro.gov.br/s/MzoeyarpLExwtaS",
+                  "version": "1.0.0",
+                  "data": "16 nov 2021",
+                  "govbr-ds_version": "2.4.1"
+                }
+              ]
+            },
+            {
+              "id": "recolhimento",
+              "label": "Guia de Recolhimento",
+              "versions": [
+                {
+                  "path": "https://serprodrive.serpro.gov.br/s/gxQFdGRtJRTBfYR",
+                  "version": "1.0.0",
+                  "data": "16 nov 2021",
+                  "govbr-ds_version": "2.4.1"
+                }
+              ]
+            },
+            {
+              "id": "base",
+              "label": "Base",
+              "versions": [
+                {
+                  "path": "https://serprodrive.serpro.gov.br/s/DFYGi6nP8yXKjYo",
+                  "version": "1.0.0",
+                  "data": "16 nov 2021",
+                  "govbr-ds_version": "2.4.1"
+                }
+              ]
+            },
+            {
+              "id": "erro",
+              "label": "Erro",
+              "versions": [
+                {
+                  "path": "https://serprodrive.serpro.gov.br/s/nxBG4iwir2qm5Dg",
+                  "version": "1.0.0",
+                  "data": "16 nov 2021",
+                  "govbr-ds_version": "2.4.1"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "files": [
+            {
+              "label": "Código Fonte",
+              "image": "assets/imgs/logos-w3c.png",
+              "description": "Exemplo de códigos prontos para utilização em HTML, CSS e Java Script.",
+              "children": [
+                {
+                  "label": "Baixar Código Fonte",
+                  "size": "103.4 MB",
+                  "version": "3.4.0",
+                  "id": "core-3.4.0",
+                  "path": "https://gitlab.com/govbr-ds/dev/govbr-ds-dev-core/-/archive/v3.4.0/govbr-ds-dev-core-v3.4.0.zip"
+                }
+              ]
+            },
+            {
+              "label": "Pacote NPM",
+              "image": "assets/imgs/logo-npm.png",
+              "description": "Baixe o pacote NPM para gerenciar pacotes Node.JS.",
+              "children": [
+                {
+                  "label": "Baixar Pacote NPM",
+                  "size": "2.6 MB",
+                  "version": "3.4.0",
+                  "id": "core-npm-3.4.0",
+                  "path": "https://registry.npmjs.org/@govbr-ds/core/-/core-3.4.0.tgz"
+                }
+              ]
+            },
+            {
+              "label": "Assets",
+              "image": "assets/imgs/pacote.png",
+              "description": "Baixe o pacote imagens e fontes para o seu projeto.",
+              "children": [
+                {
+                  "label": "Baixar Assets",
+                  "size": "9 MB",
+                  "version": "2.4.2",
+                  "id": "core-assets-2.4.2",
+                  "path": "https://serprodrive.serpro.gov.br/s/dLZJm9soLLiPzzg"
+                }
+              ]
+            }
+          ],
+          "id": "developer",
+          "label": "Desenvolvedor",
+          "description": "Baixe versões anteriores dos Artefatos de Desenvolvimento do Design System GOV.BR."
+        }
+      ],
+      "type": "downloads"
+    },
+    {
+      "children": [
+        {
+          "ext": ["html"],
+          "id": "visao-geral",
+          "label": "Fundamentos Visuais",
+          "type": "documentation"
+        },
+        {
+          "id": "cores",
+          "label": "Cores",
+          "type": "documentation"
+        },
+        {
+          "id": "iconografia",
+          "label": "Iconografia",
+          "type": "documentation"
+        },
+        {
+          "id": "espacamento",
+          "label": "Espaçamento",
+          "type": "documentation"
+        },
+        {
+          "id": "estados",
+          "label": "Estados",
+          "type": "documentation"
+        },
+        {
+          "id": "ilustracao",
+          "label": "Ilustração",
+          "type": "documentation"
+        },
+        {
+          "id": "grid",
+          "label": "Sistema de Grid",
+          "type": "documentation"
+        },
+        {
+          "id": "superficie",
+          "label": "Superfície",
+          "type": "documentation"
+        },
+        {
+          "id": "elevacao",
+          "label": "Elevação",
+          "type": "documentation"
+        },
+        {
+          "id": "movimento",
+          "label": "Movimento",
+          "type": "documentation"
+        },
+        {
+          "id": "tipografia",
+          "label": "Tipografia",
+          "type": "documentation"
+        }
+      ],
+      "id": "fundamentos-visuais",
+      "label": "Fundamentos Visuais",
+      "type": "category"
+    },
+    {
+      "children": [
+        {
+          "ext": ["html"],
+          "id": "visao-geral",
+          "label": "Padrões",
+          "type": "documentation"
+        },
+        {
+          "children": [
+            {
+              "id": "ajuda",
+              "label": "Ajuda e Comunicação",
+              "type": "documentation"
+            },
+            {
+              "id": "densidade",
+              "label": "Densidade",
+              "type": "documentation"
+            },
+            {
+              "id": "contentoverflow",
+              "label": "Content Overflow",
+              "type": "documentation"
+            },
+            {
+              "id": "dropdown",
+              "label": "Dropdown",
+              "type": "documentation"
+            },
+            {
+              "id": "formulario",
+              "label": "Formulário",
+              "type": "documentation"
+            },
+            {
+              "id": "grafico",
+              "label": "Gráfico",
+              "type": "documentation"
+            },
+            {
+              "id": "onboarding",
+              "label": "Onboarding",
+              "type": "documentation"
+            },
+            {
+              "id": "collapse",
+              "label": "Collapse",
+              "type": "documentation"
+            },
+            {
+              "id": "navegacao",
+              "label": "Navegação",
+              "type": "documentation"
+            },
+            {
+              "id": "emptystates",
+              "label": "Empty States",
+              "type": "documentation"
+            }
+          ],
+          "id": "design",
+          "label": "Design",
+          "type": "category"
+        },
+        {
+          "children": [
+            {
+              "hideLabel": true,
+              "id": "android-e-ios",
+              "label": "Padrões para Android e IOS",
+              "type": "documentation"
+            }
+          ],
+          "id": "mobile",
+          "label": "Desenvolvimento Mobile",
+          "type": "category"
+        },
+        {
+          "children": [
+            {
+              "hideLabel": true,
+              "id": "principios-writing",
+              "label": "Princípios de UX Writing",
+              "type": "documentation"
+            },
+            {
+              "hideLabel": true,
+              "id": "microcopy",
+              "label": "Microcopy",
+              "type": "documentation"
+            }
+          ],
+          "id": "writing",
+          "label": "Writing",
+          "type": "category"
+        }
+      ],
+      "id": "padroes",
+      "label": "Padrões",
+      "type": "category"
+    },
+    {
+      "children": [
+        {
+          "ext": ["html"],
+          "id": "visao-geral",
+          "label": "Componentes",
+          "type": "documentation"
+        },
+        {
+          "examples": [
+            {
+              "label": "Comportamento padrão",
+              "path": "examples/accordion-default"
+            },
+            {
+              "label": "Comportamento padrão - Escuro",
+              "path": "examples/accordion-default-negative"
+            },
+            {
+              "label": "Único item por vez",
+              "path": "examples/accordion-single"
+            },
+            {
+              "label": "Único item por vez - Escuro",
+              "path": "examples/accordion-single-negative"
+            }
+          ],
+          "id": "accordion",
+          "label": "Accordion"
+        },
+        {
+          "examples": [
+            {
+              "label": "Tipo icônico",
+              "path": "examples/avatar-icon"
+            },
+            {
+              "label": "Tipo fotográfico",
+              "path": "examples/avatar-image"
+            },
+            {
+              "label": "Tipo letra",
+              "path": "examples/avatar-letter"
+            },
+            {
+              "height": 300,
+              "label": "Com dropdown",
+              "path": "examples/avatar-dropdown"
+            }
+          ],
+          "ext": ["md", "html", "css", "js"],
+          "id": "avatar",
+          "label": "Avatar"
+        },
+        {
+          "examples": [
+            {
+              "height": 250,
+              "label": "Exemplo padrão",
+              "path": "examples/breadcrumb-default"
+            },
+            {
+              "height": 250,
+              "label": "Exemplo com truncamento",
+              "path": "examples/breadcrumb-truncate"
+            }
+          ],
+          "id": "breadcrumb",
+          "label": "Breadcrumb"
+        },
+        {
+          "examples": [
+            {
+              "label": "Ênfases",
+              "path": "examples/button-emphasys"
+            },
+            {
+              "path": "examples/button-emphasys-dark-mode"
+            },
+            {
+              "label": "Tipo circular",
+              "path": "examples/button-circle"
+            },
+            {
+              "path": "examples/button-circle-dark-mode"
+            },
+            {
+              "label": "Tipo bloco",
+              "path": "examples/button-block"
+            },
+            {
+              "path": "examples/button-block-dark-mode"
+            },
+            {
+              "label": "Densidades",
+              "path": "examples/button-densities"
+            },
+            {
+              "label": "Estados",
+              "path": "examples/button-status"
+            }
+          ],
+          "ext": ["md", "html", "css"],
+          "id": "button",
+          "label": "Button"
+        },
+        {
+          "examples": [
+            {
+              "label": "Card simples e completo",
+              "path": "examples/card-examples"
+            },
+            {
+              "label": "Card com collapse",
+              "path": "examples/card-collapse"
+            },
+            {
+              "label": "Card desativado",
+              "path": "examples/card-disabled"
+            },
+            {
+              "label": "Card com hover",
+              "path": "examples/card-hover"
+            },
+            {
+              "label": "Card com altura fixa",
+              "path": "examples/card-scroll"
+            }
+          ],
+          "id": "card",
+          "label": "Card"
+        },
+        {
+          "examples": [
+            {
+              "label": "Carousel Padrão (out)",
+              "path": "examples/carousel-padrao"
+            },
+            {
+              "label": "Carousel Circular",
+              "path": "examples/carousel-circular"
+            },
+            {
+              "label": "Carousel Interno (in)",
+              "path": "examples/carousel-in"
+            },
+            {
+              "label": "Carousel Híbrido Horizontal (hibw)",
+              "path": "examples/carousel-hibw"
+            },
+            {
+              "label": "Carousel Híbrido Vertical (hibh)",
+              "path": "examples/carousel-hibh"
+            },
+            {
+              "label": "Carousel com indicador de página textual",
+              "path": "examples/carousel-text"
+            }
+          ],
+          "id": "carousel",
+          "label": "Carousel"
+        },
+        {
+          "examples": [
+            {
+              "label": "Exemplo completo",
+              "path": "examples/checkbox-default"
+            },
+            {
+              "label": "Listagem horizontal",
+              "path": "examples/checkbox-inline"
+            },
+            {
+              "label": "Estados",
+              "path": "examples/checkbox-states"
+            },
+            {
+              "label": "Estado intermediário",
+              "path": "examples/checkbox-indeterminate"
+            },
+            {
+              "label": "Label oculto",
+              "path": "examples/checkbox-no-label"
+            }
+          ],
+          "ext": ["md", "html", "css", "js"],
+          "id": "checkbox",
+          "label": "Checkbox"
+        },
+        {
+          "examples": [
+            {
+              "height": 300,
+              "label": "Cookiebar",
+              "path": "examples/cookiebar-padrao"
+            }
+          ],
+          "id": "cookiebar",
+          "label": "CookieBar"
+        },
+        {
+          "examples": [
+            {
+              "height": 370,
+              "label": "Simples",
+              "path": "examples/datetimepicker-simple"
+            },
+            {
+              "height": 370,
+              "label": "Com intervalo de datas",
+              "path": "examples/datetimepicker-range"
+            },
+            {
+              "height": 230,
+              "label": "Timepicker",
+              "path": "examples/datetimepicker-time"
+            },
+            {
+              "height": 500,
+              "label": "DatePicker + Timepicker",
+              "path": "examples/datetimepicker-dateandtime"
+            }
+          ],
+          "id": "datetimepicker",
+          "label": "DateTimePicker"
+        },
+        {
+          "examples": [
+            {
+              "label": "Horizontal",
+              "path": "examples/divider"
+            },
+            {
+              "path": "examples/divider-dark"
+            },
+            {
+              "label": "Horizontal tracejado",
+              "path": "examples/divider-dashed"
+            },
+            {
+              "path": "examples/divider-dashed-dark"
+            },
+            {
+              "label": "Vertical",
+              "path": "examples/divider-vertical"
+            },
+            {
+              "label": "Vertical Tracejado",
+              "path": "examples/divider-vertical-dashed"
+            },
+            {
+              "label": "Espessuras",
+              "path": "examples/divider-small"
+            },
+            {
+              "path": "examples/divider-medium"
+            },
+            {
+              "path": "examples/divider-large"
+            }
+          ],
+          "ext": ["md", "html", "css"],
+          "id": "divider",
+          "label": "Divider"
+        },
+        {
+          "examples": [
+            {
+              "height": 700,
+              "label": "Tema 1",
+              "path": "examples/footer-default"
+            },
+            {
+              "height": 700,
+              "label": "Tema 2",
+              "path": "examples/footer-inverted"
+            }
+          ],
+          "id": "footer",
+          "label": "Footer"
+        },
+        {
+          "examples": [
+            {
+              "label": "Header padrão",
+              "path": "examples/header"
+            },
+            {
+              "label": "Compacto",
+              "path": "examples/header-compact"
+            },
+            {
+              "label": "Densidades",
+              "path": "examples/header-sizes"
+            }
+          ],
+          "id": "header",
+          "label": "Header"
+        },
+        {
+          "examples": [
+            {
+              "label": "Input padrão",
+              "path": "examples/input-default"
+            },
+            {
+              "label": "Densidades",
+              "path": "examples/input-sizes"
+            },
+            {
+              "label": "Input com ícones",
+              "path": "examples/input-icons"
+            },
+            {
+              "label": "Input com botões",
+              "path": "examples/input-buttons"
+            },
+            {
+              "label": "Input com Destaque",
+              "path": "examples/input-highlight"
+            },
+            {
+              "label": "Input com rótulo lateral",
+              "path": "examples/input-inline"
+            },
+            {
+              "label": "Input com validações e estados",
+              "path": "examples/input-states"
+            }
+          ],
+          "id": "input",
+          "label": "Input"
+        },
+        {
+          "examples": [
+            {
+              "label": "Exemplos de itens",
+              "path": "examples/item-elems-iteractive"
+            },
+            {
+              "label": "Itens de seleção",
+              "path": "examples/item-selection-checkbox"
+            },
+            {
+              "label": "Item desativado",
+              "path": "examples/item-disabled"
+            }
+          ],
+          "id": "item",
+          "label": "Item"
+        },
+        {
+          "examples": [
+            {
+              "label": "Lista Vertical",
+              "path": "examples/list-vertical-simples"
+            },
+            {
+              "path": "examples/list-simples-selecionaveis"
+            },
+            {
+              "label": "Densidades",
+              "path": "examples/list-dense-high"
+            },
+            {
+              "path": "examples/list-dense-medium"
+            },
+            {
+              "path": "examples/list-dense-small"
+            },
+            {
+              "label": "Agrupamentos",
+              "path": "examples/list-group-tag"
+            },
+            {
+              "path": "examples/list-group-divider"
+            },
+            {
+              "path": "examples/list-group-expansion"
+            },
+            {
+              "label": "Lista Horizontal",
+              "path": "examples/list-horizontal-divider"
+            },
+            {
+              "path": "examples/list-horizontal-expansion"
+            }
+          ],
+          "id": "list",
+          "label": "List"
+        },
+        {
+          "examples": [
+            {
+              "label": "Com porcentagem",
+              "path": "examples/loading-progress"
+            },
+            {
+              "label": "Indeterminado médio",
+              "path": "examples/loading-md"
+            },
+            {
+              "label": "Indeterminado pequeno",
+              "path": "examples/loading-sml"
+            }
+          ],
+          "ext": ["md", "html", "css"],
+          "id": "loading",
+          "label": "Loading"
+        },
+        {
+          "examples": [
+            {
+              "label": "Texto",
+              "path": "examples/magicbutton-text"
+            },
+            {
+              "label": "Ícone",
+              "path": "examples/magicbutton-icon"
+            },
+            {
+              "label": "Densidade - Alta",
+              "path": "examples/magicbutton-small"
+            },
+            {
+              "label": "Densidade - Média",
+              "path": "examples/magicbutton-medium"
+            },
+            {
+              "label": "Densidade - Baixa",
+              "path": "examples/magicbutton-large"
+            }
+          ],
+          "ext": ["md", "html", "css"],
+          "id": "magicbutton",
+          "label": "Magic Button"
+        },
+        {
+          "examples": [
+            {
+              "height": 600,
+              "label": "Menu Principal Flutuando (Off Canvas)",
+              "path": "examples/menu-principal-offcanvas"
+            },
+            {
+              "label": "Menu Principal Empurrando (Push)",
+              "path": "examples/menu-principal-push"
+            },
+            {
+              "label": "Agrupamentos de items",
+              "path": "examples/menu-groupedby"
+            },
+            {
+              "label": "Densidades",
+              "path": "examples/menu-sizes"
+            },
+            {
+              "height": 350,
+              "label": "Menu Contextual",
+              "path": "examples/menu-contextual",
+              "width": 200
+            }
+          ],
+          "id": "menu",
+          "label": "Menu"
+        },
+        {
+          "examples": [
+            {
+              "label": "Tipo padrão",
+              "path": "examples/message-padrao"
+            },
+            {
+              "label": "Tipo contextual",
+              "path": "examples/feedback"
+            }
+          ],
+          "id": "message",
+          "label": "Message"
+        },
+        {
+          "examples": [
+            {
+              "label": "Exemplo de acionamento",
+              "path": "examples/scrim-behavior",
+              "height": 300
+            },
+            {
+              "label": "Modal simples",
+              "path": "examples/modal-alert"
+            },
+            {
+              "label": "Modal carregando",
+              "path": "examples/modal-loading"
+            },
+            {
+              "label": "Modal com scroll",
+              "path": "examples/modal-terms"
+            }
+          ],
+          "id": "modal",
+          "ext": ["md", "html", "css"],
+          "label": "Modal"
+        },
+        {
+          "examples": [
+            {
+              "height": 900,
+              "label": "Exemplo",
+              "path": "examples/notification-full"
+            }
+          ],
+          "id": "notification",
+          "label": "Notification"
+        },
+        {
+          "examples": [
+            {
+              "label": "Paginação padrão",
+              "path": "examples/pagination-default"
+            },
+            {
+              "label": "Botão Reticências",
+              "path": "examples/pagination-ellipsis"
+            },
+            {
+              "label": "Densidades",
+              "path": "examples/pagination-sizes"
+            },
+            {
+              "label": "Tipo Contextual",
+              "path": "examples/pagination-contextual"
+            },
+            {
+              "label": "Em fundo escuro",
+              "path": "examples/pagination-dark"
+            }
+          ],
+          "id": "pagination",
+          "label": "Pagination"
+        },
+        {
+          "examples": [
+            {
+              "label": "Exemplo completo",
+              "path": "examples/radio-default"
+            },
+            {
+              "label": "Listagem horizontal",
+              "path": "examples/radio-inline"
+            },
+            {
+              "label": "Estados",
+              "path": "examples/radio-states"
+            }
+          ],
+          "ext": ["md", "html", "css"],
+          "id": "radio",
+          "label": "Radio"
+        },
+        {
+          "examples": [
+            {
+              "height": 300,
+              "label": "Uso Padrão",
+              "path": "examples/scrim-default"
+            },
+            {
+              "path": "examples/scrim-legibilidade"
+            }
+          ],
+          "id": "scrim",
+          "label": "Scrim"
+        },
+        {
+          "examples": [
+            {
+              "label": "Simples",
+              "path": "examples/select-simples"
+            },
+            {
+              "label": "Múltiplo",
+              "path": "examples/select-multiplo"
+            }
+          ],
+          "id": "select",
+          "label": "Select"
+        },
+        {
+          "id": "signin",
+          "label": "Sign-in",
+          "ext": ["md", "html", "css"],
+          "examples": [
+            {
+              "label": "Ênfase Primária",
+              "path": "examples/signin-primary"
+            },
+            {
+              "label": "Ênfase  secundária",
+              "path": "examples/signin-secondary"
+            },
+            {
+              "label": "Tipo Icônico Primário",
+              "path": "examples/signin-primary-circle"
+            },
+            {
+              "label": "Ênfase Primária, Secundária e Tipo Icônico com Fundo Escuro",
+              "path": "examples/signin-primary-inverted"
+            },
+            {
+              "path": "examples/signin-secondary-inverted"
+            },
+            {
+              "path": "examples/signin-secondary-circle-inverted"
+            },
+            {
+              "label": "Tipos Interno",
+              "path": "examples/signin-tipo1"
+            },
+            {
+              "label": "Tipos Externo com Texto",
+              "path": "examples/signin-tipo2"
+            },
+            {
+              "label": "Tipos Externo com Imagem",
+              "path": "examples/signin-tipo2-image"
+            },
+            {
+              "label": "Densidade - Alta",
+              "path": "examples/signin-small"
+            },
+            {
+              "label": "Densidade - Média",
+              "path": "examples/signin-medium"
+            },
+            {
+              "label": "Densidade - Baixa",
+              "path": "examples/signin-large"
+            },
+            {
+              "label": "Tipo Bloco",
+              "path": "examples/signin-secondary-block"
+            }
+          ]
+        },
+        {
+          "id": "skiplink",
+          "label": "Skip Link",
+          "ext": ["md", "html", "css"],
+          "examples": [
+            {
+              "path": "examples/skiplink-simple",
+              "label": "Tipo Simples"
+            },
+            {
+              "path": "examples/skiplink-full",
+              "label": "Tipo Composto"
+            }
+          ]
+        },
+        {
+          "id": "step",
+          "label": "Step",
+          "examples": [
+            {
+              "path": "examples/step-vertical",
+              "label": "Layout Vertical"
+            },
+            {
+              "path": "examples/step-horizontal",
+              "label": "Layout Horizontal"
+            },
+            {
+              "path": "examples/step-icon",
+              "label": "Step sem rótulo"
+            }
+          ]
+        },
+        {
+          "examples": [
+            {
+              "label": "Switch Padrão",
+              "path": "examples/switch-default"
+            },
+            {
+              "label": "Alinhamentos",
+              "path": "examples/switch-alignments"
+            },
+            {
+              "label": "Com ícone",
+              "path": "examples/switch-icon"
+            },
+            {
+              "label": "Com rótulos adicionais",
+              "path": "examples/switch-labels"
+            },
+            {
+              "label": "Densidades",
+              "path": "examples/switch-density"
+            }
+          ],
+          "ext": ["md", "html", "css"],
+          "id": "switch",
+          "label": "Switch"
+        },
+        {
+          "examples": [
+            {
+              "label": "Tab simples",
+              "path": "examples/tab-default"
+            },
+            {
+              "label": "Tab com Contadores",
+              "path": "examples/tab-count"
+            },
+            {
+              "label": "Somente Icones",
+              "path": "examples/tab-icons",
+              "height": 170
+            },
+            {
+              "label": "Densidades",
+              "path": "examples/tab-density"
+            },
+            {
+              "label": "Tab em fundo escuro",
+              "path": "examples/tab-inverted"
+            }
+          ],
+          "id": "tab",
+          "label": "Tab"
+        },
+        {
+          "examples": [
+            {
+              "label": "Tabela padrão",
+              "path": "examples/table"
+            },
+            {
+              "label": "Tabelas irregulares",
+              "path": "examples/table-irregular-1"
+            },
+            {
+              "path": "examples/table-irregular-2"
+            }
+          ],
+          "id": "table",
+          "label": "Table"
+        },
+        {
+          "examples": [
+            {
+              "label": "Tag de Interação Dispensável",
+              "path": "examples/tag-interaction"
+            },
+            {
+              "label": "Tag de Interação Persistente",
+              "path": "examples/tag-selections"
+            },
+            {
+              "label": "Tag de Texto",
+              "path": "examples/tag-text"
+            },
+            {
+              "label": "Tag de Status",
+              "path": "examples/tag-status"
+            },
+            {
+              "label": "Tag de Contagem",
+              "path": "examples/tag-count"
+            },
+            {
+              "label": "Tag de Ícone",
+              "path": "examples/tag-icon"
+            },
+            {
+              "label": "Densidades",
+              "path": "examples/tag-density"
+            }
+          ],
+          "id": "tag",
+          "label": "Tag"
+        },
+        {
+          "examples": [
+            {
+              "label": "Textarea padrão",
+              "path": "examples/textarea-default"
+            },
+            {
+              "label": "Label à esquerda",
+              "path": "examples/textarea-label-left"
+            },
+            {
+              "label": "Densidades",
+              "path": "examples/textarea-sizes"
+            },
+            {
+              "label": "Validação e estados",
+              "path": "examples/textarea-states"
+            },
+            {
+              "label": "Em fundo escuro",
+              "path": "examples/textarea-inverted"
+            },
+            {
+              "label": "Com limite e contador de caracteres",
+              "path": "examples/textarea-counter"
+            },
+            {
+              "label": "Sem limite com contador de caracteres",
+              "path": "examples/textarea-counter-no-limit"
+            }
+          ],
+          "id": "textarea",
+          "label": "Textarea"
+        },
+        {
+          "examples": [
+            {
+              "height": 300,
+              "label": "Tooltip",
+              "path": "examples/tooltip-info-top"
+            },
+            {
+              "height": 200,
+              "label": "PopOver",
+              "path": "examples/tooltip-popover"
+            }
+          ],
+          "id": "tooltip",
+          "label": "Tooltip"
+        },
+        {
+          "examples": [
+            {
+              "height": 180,
+              "label": "Envio de 1 arquivo",
+              "path": "examples/upload-single"
+            },
+            {
+              "height": 180,
+              "label": "Envio de vários arquivo",
+              "path": "examples/upload-multiple"
+            },
+            {
+              "height": 180,
+              "label": "Upload com mensagem de feedback",
+              "path": "examples/upload-feedback"
+            },
+            {
+              "height": 180,
+              "label": "Upload desabilitado",
+              "path": "examples/upload-disabled"
+            }
+          ],
+          "id": "upload",
+          "label": "Upload"
+        },
+        {
+          "examples": [
+            {
+              "label": "Layout Vertical",
+              "path": "examples/wizard-vertical"
+            },
+            {
+              "label": "Layout Horizontal",
+              "path": "examples/wizard-horizontal"
+            }
+          ],
+          "id": "wizard",
+          "label": "Wizard"
+        }
+      ],
+      "id": "components",
+      "label": "Componentes",
+      "type": "category"
+    },
+    {
+      "children": [
+        {
+          "ext": ["html"],
+          "id": "visao-geral",
+          "label": "Templates",
+          "type": "documentation"
+        },
+        {
+          "examples": [
+            {
+              "label": "Largura Fixa com Menu flutuante",
+              "path": "examples/base-offcanvas"
+            },
+            {
+              "label": "Largura Fixa com Menu empurrando conteúdo",
+              "path": "examples/base-push"
+            },
+            {
+              "label": "Largura Fluida com Menu flutuante",
+              "path": "examples/fluid-offcanvas"
+            },
+            {
+              "label": "Largura Fluida com Menu empurrando conteúdo",
+              "path": "examples/fluid-push"
+            }
+          ],
+          "ext": ["md", "html"],
+          "htmlFilename": "base",
+          "id": "base",
+          "label": "Template Base"
+        },
+        {
+          "ext": ["md", "html"],
+          "htmlFilename": "erro",
+          "id": "erro",
+          "label": "Template Erro"
+        }
+      ],
+      "id": "templates",
+      "label": "Templates",
+      "type": "category"
+    },
+    {
+      "children": [
+        {
+          "ext": ["html"],
+          "id": "visao-geral",
+          "label": "Utilitários",
+          "type": "documentation"
+        },
+        {
+          "children": [
+            {
+              "id": "tipografia",
+              "label": "Tipografia",
+              "type": "documentation"
+            },
+            {
+              "id": "overflow",
+              "label": "Overflow",
+              "type": "documentation"
+            },
+            {
+              "id": "flexbox",
+              "label": "Flexbox",
+              "type": "documentation"
+            },
+            {
+              "id": "grid",
+              "label": "Grid",
+              "type": "documentation"
+            },
+            {
+              "id": "display",
+              "label": "Display",
+              "type": "documentation"
+            },
+            {
+              "id": "espacamento",
+              "label": "Espaçamento",
+              "type": "documentation"
+            },
+            {
+              "id": "cores",
+              "label": "Cores",
+              "type": "documentation"
+            },
+            {
+              "id": "textos",
+              "label": "Textos",
+              "type": "documentation"
+            },
+            {
+              "id": "bordas",
+              "label": "Bordas",
+              "type": "documentation"
+            },
+            {
+              "id": "arredondamento",
+              "label": "Arredondamento",
+              "type": "documentation"
+            },
+            {
+              "id": "elevacao",
+              "label": "Elevação",
+              "type": "documentation"
+            },
+            {
+              "id": "movimento",
+              "label": "Movimento",
+              "type": "documentation"
+            }
+          ],
+          "id": "css",
+          "label": "CSS",
+          "type": "category"
+        },
+        {
+          "children": [
+            {
+              "default": false,
+              "designer": false,
+              "ext": ["html", "md"],
+              "id": "accordion",
+              "label": "Accordion",
+              "type": "util",
+              "examples": [
+                {
+                  "height": 300,
+                  "label": "Exemplo do comportamento accordion",
+                  "path": "examples/accordion-behavior"
+                }
+              ]
+            },
+            {
+              "default": false,
+              "designer": false,
+              "ext": ["html", "md"],
+              "id": "checkgroup",
+              "label": "Checkgroup",
+              "type": "util",
+              "examples": [
+                {
+                  "height": 300,
+                  "label": "Comportamento checkgroup simples",
+                  "path": "examples/checkgroup-behavior"
+                },
+                {
+                  "height": 300,
+                  "label": "Comportamento checkgroup em cadeia",
+                  "path": "examples/checkgroup-behavior-chain"
+                }
+              ]
+            },
+            {
+              "examples": [
+                {
+                  "height": 300,
+                  "label": "Exemplo do comportamento collapse",
+                  "path": "examples/collapse-behavior"
+                }
+              ],
+              "default": false,
+              "designer": false,
+              "ext": ["html", "md"],
+              "id": "collapse",
+              "label": "Collapse",
+              "type": "util"
+            },
+            {
+              "examples": [
+                {
+                  "height": 300,
+                  "label": "Exemplo do comportamento dropdown",
+                  "path": "examples/dropdown-behavior"
+                }
+              ],
+              "default": false,
+              "designer": false,
+              "ext": ["html", "md"],
+              "id": "dropdown",
+              "label": "Dropdown",
+              "type": "util"
+            },
+            {
+              "examples": [
+                {
+                  "height": 300,
+                  "label": "Exemplo do comportamento Scrim",
+                  "path": "examples/scrim-behavior"
+                }
+              ],
+              "default": false,
+              "designer": false,
+              "ext": ["html", "md"],
+              "id": "scrim",
+              "label": "Scrim",
+              "type": "util"
+            },
+            {
+              "examples": [
+                {
+                  "height": 300,
+                  "label": "Exemplo de Tooltip",
+                  "path": "examples/tooltip-behavior"
+                },
+                {
+                  "height": 300,
+                  "label": "Exemplo de Tooltip Simples",
+                  "path": "examples/tooltip-simples"
+                }
+              ],
+              "default": false,
+              "designer": false,
+              "id": "tooltip",
+              "label": "Tooltip",
+              "type": "util"
+            }
+          ],
+          "id": "js",
+          "label": "JS",
+          "type": "category"
+        }
+      ],
+      "id": "utilitarios",
+      "label": "Utilitários",
+      "type": "category"
+    },
+    {
+      "children": [
+        {
+          "ext": ["html"],
+          "id": "visao-geral",
+          "label": "Guias e Boas Práticas",
+          "type": "documentation"
+        },
+        {
+          "files": [
+            {
+              "description": "Expressa em detalhes os elementos necessários para padronização dos portais. Além disso, contempla layouts possíveis, descrição de itens obrigatórios e variáveis do portal, boas práticas para aplicação de conteúdo editorial e diretrizes para elaboração de conteúdos de vídeos, infográficos e tagueamento.",
+              "image": "assets/imgs/ICONE-MANUAIS.png",
+              "label": "Manual de Diretrizes",
+              "path": "assets/govbr-ds-dev-core/downloads/GovbrManualdeDiretrizes.pdf"
+            },
+            {
+              "description": "Fornece orientações sobre as etapas e procedimentos do processo de migração, abordando também indicações para o tratamento do acervo de conteúdo.",
+              "image": "assets/imgs/ICONE-MANUAIS.png",
+              "label": " Manual de Migração",
+              "path": "assets/govbr-ds-dev-core/downloads/GovbrManualdeMigracao.pdf"
+            },
+            {
+              "description": "Apresenta as ferramentas de administração e publicação de conteúdos dentro do portal gov.br. Inclui também, com base nos pilares da comunicação de governo - informar, monitorar, ouvir, contribuir e evoluir -, proposta de tom de voz e linguagem e recomendações para construção de textos de agenda, notícias e serviços.",
+              "image": "assets/imgs/ICONE-MANUAIS.png",
+              "label": "Manual de Publicação",
+              "path": "assets/govbr-ds-dev-core/downloads/GovbrManualdePublicacao.pdf"
+            },
+            {
+              "description": "Apresenta conjunto de ações que podem ser realizadas para que um site se posicione melhor em resultados orgânicos nos motores de buscas e potencialmente obtenha mais acessos.",
+              "image": "assets/imgs/ICONE-MANUAIS.png",
+              "label": "Manual de Search Engine Optimization (SEO)",
+              "path": "assets/govbr-ds-dev-core/downloads/GovbrManualdeSEO.pdf"
+            },
+            {
+              "description": "Padrões e normas de apresentação da marca gov.br.",
+              "image": "assets/imgs/ICONE-MANUAIS.png",
+              "label": "Manual de uso da marca gov.br",
+              "path": "assets/govbr-ds-dev-core/downloads/GovbrManualMarca.pdf"
+            },
+            {
+              "description": "Este guia tem o objetivo de auxiliar gestores de comunicação da administração pública federal, e demais órgãos vinculados ao Governo, no desenvolvimento e divulgação das ações de comunicação dos serviços digitais que envolverem a plataforma gov.br.",
+              "image": "assets/imgs/ICONE-MANUAIS.png",
+              "label": "Guia de Transformação Digital - Ações de Comunicação Social",
+              "path": "assets/govbr-ds-dev-core/downloads/GovbrManualTransformacaoDigital.pdf"
+            }
+          ],
+          "id": "manuais-orientadores",
+          "label": "Manuais orientadores",
+          "type": "downloads"
+        },
+        {
+          "id": "boas-praticas-de-css",
+          "label": "Boas práticas de CSS",
+          "type": "documentation"
+        },
+        {
+          "id": "boas-praticas-de-html",
+          "label": "Boas práticas de HTML",
+          "type": "documentation"
+        },
+        {
+          "id": "acessibilidade-html",
+          "label": "Acessibilidade no Código HTML",
+          "type": "documentation"
+        },
+        {
+          "id": "codificacao-javascript",
+          "label": "Codificação JavaScript",
+          "type": "documentation"
+        },
+        {
+          "id": "codificacao-sass",
+          "label": "Codificação Sass",
+          "type": "documentation"
+        },
+        {
+          "id": "wai-aria",
+          "label": "Uso do WAI-ARIA",
+          "type": "documentation"
+        },
+        {
+          "id": "navegadores-suportados",
+          "label": "Navegadores suportados",
+          "type": "documentation"
+        },
+        {
+          "id": "construcao-de-componentes",
+          "label": "Construção de Componentes",
+          "type": "documentation"
+        },
+        {
+          "id": "migracao-2x-3x",
+          "label": "Migração da versão 2.x para 3.x do Design System GOV.BR",
+          "type": "documentation"
+        }
+      ],
+      "id": "guias",
+      "label": "Guias e Boas Práticas",
+      "type": "category"
+    },
+    {
+      "files": [
+        {
+          "description": "Disciplina a implantação e a gestão do Padrão Digital de Governo dos órgãos e entidades do Poder Executivo federal.",
+          "image": "assets/imgs/icone-legislacao.png",
+          "label": "Padrão Digital de Governo",
+          "path": "https://www.in.gov.br/web/dou/-/portaria-n-7.508-de-22-de-novembro-de-2022-446087089"
+        }
+      ],
+      "id": "legislacao",
+      "label": "Legislação",
+      "type": "downloads"
+    },
+    {
+      "children": [
+        {
+          "hideLabel": true,
+          "id": "release-notes",
+          "label": "Release Notes",
+          "path": "RELEASE-NOTES.md",
+          "type": "documentation"
+        },
+        {
+          "id": "govbr-ds-2.4.3",
+          "label": "Versão 2.4.3 (Obsoleta)",
+          "path": "/ds/v243/",
+          "target": "_blank",
+          "type": "link"
+        }
+      ],
+      "id": "historico",
+      "label": "Histórico de Versões",
+      "type": "category"
+    }
+  ],
+  "defaultTypeConfig": [
+    {
+      "default": true,
+      "ext": ["md"],
+      "forType": ["documentation"]
+    },
+    {
+      "default": true,
+      "designer": true,
+      "developer": true,
+      "accessibility": true,
+      "ext": ["md", "html", "css", "js"],
+      "forType": ["components", "templates", "pages", "util"],
+      "htmlFilename": "examples"
+    }
+  ]
+}

@@ -1,0 +1,86 @@
+---
+extends:
+  - plugin:jsx-a11y/recommended
+  - plugin:prettier/recommended
+plugins:
+  - html
+parser: '@babel/eslint-parser'
+parserOptions:
+  ecmaVersion: 2018
+  sourceType: module
+  ecmaFeatures:
+    jsx: true
+env:
+  es6: true
+  browser: true
+  node: true
+root: true
+rules:
+  quotes:
+    - error
+    - single
+  accessor-pairs: 2
+  array-callback-return: 2
+  arrow-body-style:
+    - error
+    - always
+  arrow-spacing: error
+  block-scoped-var: 2
+  complexity:
+    - error
+    - max: 10
+  consistent-return: 2
+  consistent-this: 2
+  eqeqeq: 2
+  no-confusing-arrow: error
+  no-console:
+    - error
+    - allow:
+        - warn
+        - error
+  no-debugger: 2
+  no-unused-vars: 2
+  no-duplicate-imports: 2
+  no-empty-function: 2
+  no-eq-null: 2
+  no-eval: 2
+  no-loop-func: 2
+  no-new-func: 2
+  no-param-reassign: 2
+  no-plusplus:
+    - error
+    - allowForLoopAfterthoughts: true
+  no-restricted-globals: 2
+  no-return-assign: 2
+  no-self-compare: 2
+  no-template-curly-in-string: 0
+  no-undef-init: 2
+  no-undefined: 2
+  no-unused-expressions:
+    - error
+    - allowShortCircuit: true
+      allowTernary: true
+  no-use-before-define: 2
+  no-useless-computed-key: 2
+  no-useless-concat: 2
+  no-useless-constructor: 2
+  no-useless-rename: 2
+  no-var: 2
+  prefer-arrow-callback: 2
+  prefer-const: 2
+  prefer-destructuring: 2
+  prefer-spread: 2
+  prefer-template: 2
+  prettier/prettier:
+    - error
+    - endOfLine: auto
+      semi: false
+      singleQuote: true
+  sort-keys: error
+  template-curly-spacing: 2
+  vars-on-top: 2
+  default-case-last: 2
+  default-case: error
+  default-param-last: 2
+  no-alert: 2
+  no-constructor-return: 2

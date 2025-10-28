@@ -1,0 +1,18 @@
+{
+  "type": "object",
+  "properties": {
+    "outputType": {
+      "type": "string",
+      "enum": [null, "commonjs", "html"]
+    },
+    "compilerOptions": {
+      "description": "Pug compiler options. It's passed down to pug as-is except for filename and name properties which are overridden",
+      "type": "object"
+    },
+    "locals": {
+      "description": "Locals object to be used to render all templates",
+      "type": "object"
+    }
+  },
+  "additionalProperties": false
+}

@@ -1,0 +1,39 @@
+{% extends "base_generic.html" %}
+{% load custom_tags %}
+
+{% block title %}Novo PDTIC{% endblock %}
+
+{% block content %}
+
+<div class="container">
+    <h2 class="text-center">Criar Novo PDTIC</h2>
+    <form method="post" enctype="multipart/form-data">
+        {% csrf_token %}
+        {{ form.non_field_errors }}
+        {% for field in form %}
+            <div class="form-group">
+                <label for="{{ field.id_for_label }}">
+                    {{ field.label }}
+                    {% if field.field.required %} 
+                    :{% endif %}
+                </label>
+                {{ field|add_class:"form-control" }}  
+                {% if field.errors %}
+                <div class="text-danger">
+                    {% for error in field.errors %}
+                    <p>{{ error }}</p>
+                    {% endfor %}
+                </div>
+                {% endif %}
+            </div>
+        {% endfor %}
+        <div class="form-group">
+            <label for="id_pdf_arquivo">Anexar PDF</label>
+            <input type="file" name="pdf_arquivo" id="id_pdf_arquivo" class="form-control" accept=".pdf" />
+        </div>
+        <button type="submit" class="btn btn-dark mb-1">Salvar</button>
+    </form>
+    <a href="{% url 'home' %}" class="btn btn-light mb-1">Voltar para a página inicial</a>
+</div>
+{% endblock %}
+

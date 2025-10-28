@@ -1,0 +1,12 @@
+--Baixar os pacotes (Só para conhecimento. Não precisa executar. Continue na linha 7)
+pip download -r requirements.txt -d pacotes
+
+
+OBS: O "venv" e o "pip" já vem na instalação do python 3+
+
+======= -- Criar o ambiente -- =======
+python3 -m venv venv
+source venv/bin/activate
+
+======= -- Instalar os pacotes offline -- =======
+pip install --no-index --find-links=pacotes -r requirements.txt

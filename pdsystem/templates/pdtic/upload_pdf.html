@@ -1,0 +1,7 @@
+<!-- upload_pdf.html -->
+<h1>Upload de PDF</h1>
+<form method="post" enctype="multipart/form-data">
+    {% csrf_token %}
+    {{ form.as_p }}  
+    <button type="submit">Enviar</button>
+</form>

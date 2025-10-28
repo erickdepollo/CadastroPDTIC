@@ -1,0 +1,8 @@
+setuptools>=68.0.0
+Django
+psycopg2
+mysqlclient
+djangorestframework
+python-decouple
+django-cors-headers
+django-allauth
