@@ -1,1 +1,0 @@
-Os menus de navegação (ou simplesmente menus) são listas de categorias de conteúdo ou recursos, normalmente apresentados como um conjunto de *links* ou ícones agrupados com um estilo visual diferente do resto do *design*.
